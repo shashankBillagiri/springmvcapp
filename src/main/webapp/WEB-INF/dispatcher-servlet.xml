@@ -10,8 +10,12 @@
         http://www.springframework.org/schema/mvc
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <mvc:resources mapping="/js/**" location="/js/" />
+    <mvc:annotation-driven />
+
+
     <!-- Scan for @Controller classes -->
-    <context:component-scan base-package="com.shashank.mvcapp.controller"/>
+    <context:component-scan base-package="com.shashank.mvcapp"/>
 
     <!-- Enable @RequestMapping and other Spring MVC features -->
     <mvc:annotation-driven/>
